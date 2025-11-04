@@ -1,0 +1,47 @@
+{
+  "encounterId": "E003",
+  "patientId": "P003",
+  "patientName": "Wang Wu",
+  "timeline": [
+    {
+      "id": 1,
+      "event": "Patient Arrival",
+      "time": "2024-01-15T12:30:00Z",
+      "duration": 0,
+      "description": "Patient arrived at the Surgery outpatient clinic for a scheduled surgical consultation.",
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "event": "Pre-operative Examination",
+      "time": "2024-01-15T12:35:00Z",
+      "duration": 15,
+      "description": "Routine pre-operative checks were performed.",
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "event": "Surgeon Consultation",
+      "time": "2024-01-15T12:50:00Z",
+      "duration": 30,
+      "description": "Surgeon conducted a detailed evaluation of the surgical plan.",
+      "status": "completed"
+    },
+    {
+      "id": 4,
+      "event": "Surgery Scheduling",
+      "time": "2024-01-15T13:20:00Z",
+      "duration": 10,
+      "description": "Scheduled the surgery time and preparation details.",
+      "status": "completed"
+    },
+    {
+      "id": 5,
+      "event": "Consultation Complete",
+      "time": "2024-01-15T13:30:00Z",
+      "duration": 0,
+      "description": "Consultation finished, awaiting notification for surgery.",
+      "status": "completed"
+    }
+  ]
+}

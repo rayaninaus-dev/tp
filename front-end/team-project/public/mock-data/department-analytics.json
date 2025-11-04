@@ -1,0 +1,115 @@
+{
+  "turnaround": {
+    "Triage to Nurse": 8,
+    "Triage to Doctor": 24,
+    "Pathology Request to Result": 52,
+    "Imaging Request to Reported": 78,
+    "Admission Request to Bed": 95,
+    "Bed Allocation to Departure": 22,
+    "Triage to Pathology Request": 30,
+    "Pathology Request to Collected": 18,
+    "Pathology Collected to Result": 24,
+    "Triage to Imaging Request": 40,
+    "Imaging Request to Complete": 36,
+    "Imaging Complete to Reported": 38,
+    "Doctor to Senior Doctor": 22,
+    "Doctor to Departure": 64,
+    "Doctor to Referral": 30,
+    "Referral to Departure": 46,
+    "Referral to Admission Request": 34,
+    "Admission Request to Bed Request": 48,
+    "Bed Request to Bed Allocation": 26,
+    "Bed Allocation to Bed Departure": 24
+  },
+  "losStats": {
+    "average": 4.6,
+    "median": 3.1
+  },
+  "admittedPatients": [
+    {
+      "id": "patient-001",
+      "name": "John Doe",
+      "department": "Emergency",
+      "bedWaitTime": 110
+    },
+    {
+      "id": "patient-002",
+      "name": "Jane Smith",
+      "department": "Emergency",
+      "bedWaitTime": 145
+    },
+    {
+      "id": "patient-003",
+      "name": "Michael Lee",
+      "department": "Emergency",
+      "bedWaitTime": 70
+    }
+  ],
+  "waitBreakdown": [
+    {
+      "step": "Triage -> Nurse",
+      "average": 8
+    },
+    {
+      "step": "Triage -> Doctor",
+      "average": 24
+    },
+    {
+      "step": "Triage -> Pathology Request",
+      "average": 30
+    },
+    {
+      "step": "Pathology Request -> Collected",
+      "average": 18
+    },
+    {
+      "step": "Pathology Collected -> Result",
+      "average": 24
+    },
+    {
+      "step": "Triage -> Imaging Request",
+      "average": 40
+    },
+    {
+      "step": "Imaging Request -> Complete",
+      "average": 36
+    },
+    {
+      "step": "Imaging Complete -> Reported",
+      "average": 38
+    },
+    {
+      "step": "Doctor -> Senior Doctor",
+      "average": 22
+    },
+    {
+      "step": "Doctor -> Departure",
+      "average": 64
+    },
+    {
+      "step": "Doctor -> Referral",
+      "average": 30
+    },
+    {
+      "step": "Referral -> Departure",
+      "average": 46
+    },
+    {
+      "step": "Referral -> Admission Request",
+      "average": 34
+    },
+    {
+      "step": "Admission Request -> Bed Request",
+      "average": 48
+    },
+    {
+      "step": "Bed Request -> Bed Allocation",
+      "average": 26
+    },
+    {
+      "step": "Bed Allocation -> Bed Departure",
+      "average": 24
+    }
+  ]
+}
+

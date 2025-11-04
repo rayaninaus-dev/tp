@@ -1,0 +1,55 @@
+{
+  "encounterId": "E001",
+  "patientId": "P001",
+  "patientName": "Zhang San",
+  "timeline": [
+    {
+      "id": 1,
+      "event": "Patient Arrival",
+      "time": "2024-01-15T13:30:00Z",
+      "duration": 0,
+      "description": "Patient arrived at the Emergency Department, complaining of chest pain.",
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "event": "Initial Triage",
+      "time": "2024-01-15T13:35:00Z",
+      "duration": 10,
+      "description": "Nurse conducted initial vital signs check.",
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "event": "Physician Consultation",
+      "time": "2024-01-15T13:50:00Z",
+      "duration": 15,
+      "description": "Emergency physician performed a detailed consultation and physical examination.",
+      "status": "completed"
+    },
+    {
+      "id": 4,
+      "event": "ECG Examination",
+      "time": "2024-01-15T14:10:00Z",
+      "duration": 5,
+      "description": "A 12-lead ECG was performed.",
+      "status": "completed"
+    },
+    {
+      "id": 5,
+      "event": "Blood Test",
+      "time": "2024-01-15T14:20:00Z",
+      "duration": 30,
+      "description": "Blood drawn for cardiac enzyme and inflammatory marker tests.",
+      "status": "in-progress"
+    },
+    {
+      "id": 6,
+      "event": "Awaiting Results",
+      "time": "2024-01-15T14:50:00Z",
+      "duration": 45,
+      "description": "Awaiting blood test results.",
+      "status": "pending"
+    }
+  ]
+}

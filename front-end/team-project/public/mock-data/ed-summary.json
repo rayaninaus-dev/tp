@@ -1,0 +1,38 @@
+{
+  "kpis": {
+    "totalPatients": 78,
+    "waitingPatients": 12,
+    "averageWaitTime": 45,
+    "bedOccupancy": 85,
+    "criticalAlerts": 3
+  },
+  "alerts": [
+    { "id": "A001", "type": "critical", "message": "High patient influx in Triage Area", "department": "Emergency", "timestamp": "2025-09-01T14:30:00Z" },
+    { "id": "A002", "type": "warning", "message": "Radiology dept reports a 30min delay", "department": "Imaging", "timestamp": "2025-09-01T14:15:00Z" }
+  ],
+  "departments": [
+    { "name": "Trauma Bay", "patients": 5, "capacity": 6, "occupancy": 83 },
+    { "name": "General Medicine", "patients": 15, "capacity": 20, "occupancy": 75 },
+    { "name": "Pediatrics", "patients": 8, "capacity": 10, "occupancy": 80 }
+  ],
+  "turnaround": {
+    "Triage to Nurse": 8,
+    "Triage to Doctor": 25,
+    "Pathology Request to Result": 95,
+    "Imaging Request to Reported": 120,
+    "Admission Request to Bed": 180,
+    "Bed Allocation to Departure": 45
+  },
+  "losStats": {
+    "average": 4.2,
+    "median": 3.8
+  },
+  "admittedPatients": [
+    { "id": "PT-015", "name": "Laura Evans", "admitTime": "2025-09-01T10:00:00Z", "department": "Cardiology", "bedWaitTime": 180 },
+    { "id": "PT-021", "name": "Robert Chen", "admitTime": "2025-09-01T11:30:00Z", "department": "Surgery", "bedWaitTime": 150 }
+  ],
+  "patients": [
+    { "id": "PT-001", "name": "John Smith", "age": 45, "gender": "Male", "status": "in-treatment", "priority": "urgent", "department": "Trauma Bay", "waitTime": 15, "vitals": { "hr": "110", "bp": "140/90", "temp": "37.5", "spo2": "96" } },
+    { "id": "PT-002", "name": "Jane Doe", "age": 32, "gender": "Female", "status": "waiting", "priority": "normal", "department": "General Medicine", "waitTime": 45, "vitals": { "hr": "85", "bp": "120/80", "temp": "37.0", "spo2": "98" } }
+  ]
+}

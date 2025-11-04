@@ -1,0 +1,47 @@
+{
+  "encounterId": "E002",
+  "patientId": "P002",
+  "patientName": "Li Si",
+  "timeline": [
+    {
+      "id": 1,
+      "event": "Patient Arrival",
+      "time": "2024-01-15T13:45:00Z",
+      "duration": 0,
+      "description": "Patient arrived at the Internal Medicine clinic, complaining of fever and cough.",
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "event": "Registration",
+      "time": "2024-01-15T13:47:00Z",
+      "duration": 3,
+      "description": "Completed registration and basic information entry.",
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "event": "Waiting for Call",
+      "time": "2024-01-15T13:50:00Z",
+      "duration": 25,
+      "description": "Waiting in the waiting area to be called by the doctor.",
+      "status": "completed"
+    },
+    {
+      "id": 4,
+      "event": "Physician Diagnosis",
+      "time": "2024-01-15T14:15:00Z",
+      "duration": 20,
+      "description": "Internal Medicine physician conducting a detailed examination and diagnosis.",
+      "status": "in-progress"
+    },
+    {
+      "id": 5,
+      "event": "Prescription Issued",
+      "time": "2024-01-15T14:35:00Z",
+      "duration": 5,
+      "description": "Physician is issuing a medication prescription.",
+      "status": "pending"
+    }
+  ]
+}

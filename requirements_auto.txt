@@ -1,0 +1,8 @@
+fastapi
+joblib
+pandas
+prophet
+pydantic
+requests
+selenium
+webdriver_manager

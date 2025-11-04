@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --color-medical-primary: 0 94 184; /* NHS Blue */
+    --color-medical-secondary: 65 182 230; /* Light blue */
+    --color-medical-accent: 237 139 0; /* Orange */
+    --color-medical-success: 0 150 57; /* Green */
+    --color-medical-danger: 218 41 28; /* Red */
+    --color-medical-neutral: 66 85 99; /* Dark blue-gray */
+    --color-medical-light: 232 237 238; /* Light gray */
+    --color-medical-dark: 0 48 135; /* Dark blue */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply bg-medical-light text-medical-neutral;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold text-medical-dark;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+}
+
+/* Clinical UI Components */
+@layer components {
+  .clinical-card {
+    @apply bg-white rounded-lg shadow-clinical border border-gray-100 p-4;
+  }
+
+  .clinical-button-primary {
+    @apply bg-medical-primary hover:bg-medical-dark text-white font-medium py-2 px-4 rounded-md transition-colors;
+  }
+
+  .clinical-button-secondary {
+    @apply bg-white border border-medical-primary text-medical-primary hover:bg-medical-light font-medium py-2 px-4 rounded-md transition-colors;
+  }
+
+  .clinical-alert {
+    @apply bg-medical-accent/10 border-l-4 border-medical-accent text-medical-neutral p-4 rounded-r-md;
+  }
+
+  .clinical-stat {
+    @apply flex flex-col p-4 bg-white rounded-lg shadow-clinical;
+  }
+
+  .clinical-stat-label {
+    @apply text-xs font-medium text-medical-neutral uppercase tracking-wide;
+  }
+
+  .clinical-stat-value {
+    @apply text-2xl font-bold text-medical-primary mt-1;
+  }
+}
